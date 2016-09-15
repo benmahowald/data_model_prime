@@ -1,0 +1,21 @@
+CREATE TABLE "public"."department" (
+    "id" serial,
+    "depName" text,
+    PRIMARY KEY ("id")
+);
+
+CREATE TABLE "public"."staff" (
+    "id" serial,
+    "name" text,
+    PRIMARY KEY ("id")
+);
+
+CREATE TABLE "public"."lectures" (
+    "id" serial PRIMARY KEY,
+    "type" text
+);
+
+CREATE TABLE "public"."staff_department" (
+    "name" text,
+	"deptName" text
+);
